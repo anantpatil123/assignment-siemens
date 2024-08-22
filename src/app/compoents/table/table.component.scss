@@ -1,0 +1,37 @@
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 12px 15px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  td {
+    padding: 10px 15px;
+  }
+  
+.btn-container{
+    display: flex;
+    justify-content: end;
+}
+
+.no-data-text{
+  display: flex;
+    justify-content: center;
+}

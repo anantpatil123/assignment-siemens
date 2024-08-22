@@ -1,0 +1,42 @@
+<h1> Student List</h1>
+
+<div class="btn-container">
+  <button (click)="onCreate(studentList.length)" class="btn"> Add Student </button>
+</div>
+
+<!-- <ng-template *ngIf="studentList.length > 0"> -->
+<table>
+  <thead>
+    <tr>
+      <th>Sr. No.</th>
+      <th>Name</th>
+      <th>Number</th>
+      <th>Email</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of studentList; index as i">
+
+      <td> {{ row.id}}</td>
+      <td> {{ row.firstName}} &nbsp;{{ row.lastName}}</td>
+      <td> {{ row.mobileNumber}}</td>
+      <td> {{row.email}}</td>
+      <td> 
+        <button (click)="onEdit(row)" class="btn"> Edit </button>
+        <button (click)="onDelete(row.id)" class="delete-btn"> Delete</button> </td>
+  </tbody>
+</table>
+<!-- </ng-template> -->
+
+<ng-template *ngIf="studentList.length === 0">
+    <div class="no-data-text">
+      No data available click on 'Add Student' button to add student profile 
+    </div>
+</ng-template>
+
+<br>
+
+
+<hr>
+<app-popup *ngIf="isPopupVisible" (onFromSubmit)="refreshForm($event)" (closed)="closePopup()" [newStudentId]="newStudentId" [studentData]="selectedStudent" [isEditMode]="isEditMode"></app-popup>

@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+.center {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+* {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.btn {
+    padding: 10px 12px;
+    color: #00246B;
+    background-color: #CADCFC;
+    border-color: #CADCFC;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+
+.delete-btn:hover {
+    background-color: rgb(206, 17, 17);
+    color:#ffff
+}
+
+.btn:hover {
+    background-color: #00246B;
+    color: #CADCFC;
+}
+
+.btn:disabled{
+    background-color: rgb(196, 173, 173);
+    color:#6b5151
+}
+
+
+.delete-btn {
+    color:  rgb(206, 17, 17);
+    background-color: rgb(238, 120, 120);
+    margin-left:10px;
+    padding: 10px 12px;
+    border-color:  rgb(238, 120, 120);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
