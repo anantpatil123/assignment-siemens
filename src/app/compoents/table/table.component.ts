@@ -1,11 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Student } from '../../interface/student';
 import { StudetService } from '../../services/studet.service';
 import { NgFor, NgIf } from '@angular/common';
 import { PopupComponent } from '../popup/popup.component';
-import { IonicModule } from '@ionic/angular';
-import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from '../../services/InMemoryDbService';
 
 @Component({
   selector: 'app-table',
